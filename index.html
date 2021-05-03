@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="player.css">
+</head>
+<body>
+    <div id="playerWrapper" class="player-total-wrapper"></div>
+    <div id="playerWrapper2" class="player-total-wrapper"></div>
+    <script src="./Song.js"></script>
+    <script src="./Player.js"></script>
+    <script>
+        const player = new Player('#playerWrapper');
+        player.setSong("test Author", "test Name", "testHash");
+        const player2 = new Player('#playerWrapper2');
+        player2.setSong("test Author", "test Name", "testHash");
+    </script>
+</body>
+</html>
